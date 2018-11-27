@@ -1,0 +1,15 @@
+$color: red;
+$color2:yellow;
+
+@mixin my-border($color) {
+  border: 1px solid $color;
+}
+
+body {
+  background: $color;
+  @include my-border(green);
+}
+
+.navBar {
+  background: $color2;
+}
